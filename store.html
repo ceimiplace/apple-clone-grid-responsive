@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Store</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: sans-serif;
+      }
+      .navbar {
+        background-color: rgb(38, 35, 35);
+        height: 40px;
+        border-bottom: 0;
+        padding: 10px 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .navbar a {
+        color: rgb(235, 235, 235);
+      }
+      @media screen and (min-width: 320px) {
+        .first-top {
+          margin-bottom: 30px;
+          padding: 0 10px;
+          padding-top: 20px;
+          justify-content: space-around;
+          display: flex;
+          gap: 10px;
+          align-items: center;
+        }
+        .first-top > p {
+          font-size: 22px;
+
+          font-weight: bold;
+        }
+
+        .top-right-float {
+          padding-top: 5px;
+          padding-bottom: 5px;
+          display: flex;
+
+          flex-direction: column;
+          gap: 20px;
+          align-items: center;
+        }
+        .top-right-float img {
+          height: 25px;
+        }
+        .top-right-float p {
+          font-size: 11px;
+        }
+        .first-top p span {
+          color: grey;
+        }
+        .half {
+          display: flex;
+          align-items: center;
+        }
+        .products-container {
+          gap: 30px;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-evenly;
+        }
+        .image-container-product img {
+          height: 100px;
+        }
+        .product {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+        }
+        @media screen and (min-width: 495px) {
+          .products-container {
+            flex-wrap: nowrap;
+          }
+          .product {
+            width: 80px;
+          }
+        }
+        .product p {
+          font-weight: bold;
+          font-size: 18px;
+        }
+        @media screen and (min-width: 670px) {
+          .products-container {
+            flex-wrap: wrap;
+          }
+          .product {
+            width: 200px;
+          }
+          .first-top {
+            padding-top: 60px;
+            justify-content: space-around;
+          }
+          .first-top > p {
+            font-size: 40px;
+          }
+          .top-right-float p {
+            font-size: 16px;
+          }
+          .image-container-product img {
+            height: 200px;
+          }
+        }
+        @media screen and (min-width: 888px) {
+          .products-container {
+            flex-wrap: nowrap;
+          }
+          .product {
+            min-width: 160px;
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="#"><i class="fa-solid fa-bars"></i></a>
+      <a href="#"><i class="fa-brands fa-apple"></i></a>
+      <a href="#"><i class="fa-solid fa-basket-shopping"></i></a>
+    </div>
+    <div class="first-top">
+      <p>
+        Store. <span>The best way to buy <br />the products you love </span>
+      </p>
+      <div class="top-right-float">
+        <div class="half">
+          <div class="image-container">
+            <img
+              src="https://toppng.com/uploads/preview/instagram-default-profile-picture-11562973083brycehrmyv.png"
+            />
+          </div>
+          <div class="text-container">
+            <p>Need help?</p>
+            <p>Ask a question</p>
+          </div>
+        </div>
+        <div class="half">
+          <div class="image-container">
+            <img
+              src="https://toppng.com/uploads/preview/instagram-default-profile-picture-11562973083brycehrmyv.png"
+            />
+          </div>
+          <div class="text-container">
+            <p>Need help?</p>
+            <p>Ask a question</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="products-container">
+      <div class="product">
+        <div class="image-container-product">
+          <img src="../macforclone.png" />
+        </div>
+        <p>Mac</p>
+      </div>
+      <div class="product">
+        <div class="image-container-product">
+          <img src="/iphoneforclone.png" />
+        </div>
+        <p>iPhone</p>
+      </div>
+      <div class="product">
+        <div class="image-container-product">
+          <img src="ipadforclone.png" />
+        </div>
+        <p>Ipad</p>
+      </div>
+      <div class="product">
+        <div class="image-container-product">
+          <img src="iwatchforclone.png" />
+        </div>
+        <p>Apple Watch</p>
+      </div>
+      <div class="product">
+        <div class="image-container-product">
+          <img src="airpodsforclone.png" />
+        </div>
+        <p>Airpods</p>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://kit.fontawesome.com/29601d2dce.js"
+    crossorigin="anonymous"
+  ></script>
+</html>

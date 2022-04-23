@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apple Clone 2</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      /* max screen 360px */
+
+      @media screen and (min-width: 360px) {
+        body {
+          font-family: sans-serif;
+
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: auto;
+        }
+        h2 {
+          font-size: 42px;
+        }
+        .pro13 p,
+        .pro-se p,
+        .iwatch p {
+          font-size: 25px;
+        }
+        .navbar {
+          background-color: rgb(99, 99, 99);
+          height: 40px;
+          border-bottom: 0;
+          padding: 10px 15px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+        .navbar a {
+          color: black;
+        }
+        .subbar {
+          background-color: rgb(15, 9, 9);
+
+          margin-bottom: 10px;
+
+          color: rgb(70, 100, 164);
+          height: 75px;
+
+          display: flex;
+          justify-content: center;
+          padding: 0 10px;
+          gap: 10px;
+        }
+        .subbar div,
+        .subbar p {
+          align-self: center;
+        }
+        .subbar div img {
+          width: 150px;
+        }
+        .text {
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+        }
+        .flex-container {
+          margin-bottom: 10px;
+          background-color: rgb(237, 237, 237);
+          padding-top: 20px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 20px;
+          justify-content: center;
+        }
+
+        .image {
+          width: 360px;
+        }
+        img {
+          max-width: 100%;
+        }
+        .ipad {
+          background-color: black;
+          color: white;
+        }
+
+        .pro-se {
+          padding-bottom: 20px;
+          padding-left: 20px;
+          padding-right: 20px;
+          gap: 50px;
+        }
+        .pro-se .text {
+          gap: 10px;
+        }
+        .ipad {
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+      @media screen and (min-width: 790px) {
+        body {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: auto auto 600px 500px;
+          column-gap: 10px;
+
+          grid-template-areas:
+            "nav nav"
+            "subnav subnav"
+            "pro13 pro13"
+            "prose iwatch"
+            "ipad ipad";
+        }
+        .navbar {
+          grid-area: nav;
+        }
+        .subbar {
+          grid-area: subnav;
+        }
+        .pro13 {
+          grid-area: pro13;
+        }
+        .pro13 .image {
+          width: 650px;
+          overflow: hidden;
+        }
+        .pro13 .image img {
+          width: 1000px;
+          height: 650px;
+        }
+        .pro-se {
+          grid-area: prose;
+        }
+        .iwatch {
+          grid-area: iwatch;
+        }
+        .ipad {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          grid-area: ipad;
+        }
+        .ipad img {
+          max-width: 500px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="#"><i class="fa-solid fa-bars"></i></a>
+      <a href="#"><i class="fa-brands fa-apple"></i></a>
+      <a href="#"><i class="fa-solid fa-basket-shopping"></i></a>
+    </div>
+    <div class="subbar">
+      <div>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/UNICEF_Logo.png/800px-UNICEF_Logo.png"
+        />
+      </div>
+      <p>Plese help us support the victims of the Ukcraine war!</p>
+    </div>
+    <div class="pro13 flex-container">
+      <div class="text">
+        <h2>iPhone 13 pro</h2>
+        <p>OH. So. Pro</p>
+        <p><a href="#">Lean more > </a> <a href="#">Buy ></a></p>
+      </div>
+      <div class="image">
+        <img
+          src="https://github.com/ceimiplace/Apple-clone--grid-responsive/blob/main/ihpone13clone.png?raw=true"
+        />
+      </div>
+    </div>
+    <div class="pro-se flex-container">
+      <div class="text">
+        <h2>iPhone SE</h2>
+        <p>So much more. So. Much.</p>
+        <p><a href="#">Lean more > </a> <a href="#">Buy ></a></p>
+      </div>
+      <div class="image">
+        <img
+          src="https://freebiescloud.com/wp-content/uploads/2022/03/Apple-iPhone-SE-2022-1.png"
+        />
+      </div>
+    </div>
+    <div class="iwatch flex-container">
+      <div class="text">
+        <h2>iWatch</h2>
+        <p>The watch. You watch. So much.</p>
+        <p><a href="#">Lean more > </a> <a href="#">Buy ></a></p>
+      </div>
+      <div class="image">
+        <img
+          src="https://github.com/ceimiplace/Apple-clone--grid-responsive/blob/main/iwatch360px.png?raw=true"
+        />
+      </div>
+    </div>
+    <div class="ipad flex-container">
+      <div class="text">
+        <h2>iPad air</h2>
+        <p>Light. Bright. Full of might.</p>
+        <p><a href="#">Lean more > </a> <a href="#">Buy ></a></p>
+      </div>
+      <div class="image">
+        <img
+          src="https://www.notebookcheck.it/fileadmin/Notebooks/News/_nc3/Apple_iPad_Air_5_M1_Prozessor_SoC.jpg"
+        />
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://kit.fontawesome.com/29601d2dce.js"
+    crossorigin="anonymous"
+  ></script>
+</html>
