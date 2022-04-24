@@ -57,7 +57,7 @@
         .top-right-float p {
           font-size: 11px;
         }
-        .first-top p span {
+        .grey-text {
           color: grey;
         }
         .half {
@@ -77,6 +77,43 @@
           display: flex;
           align-items: center;
           flex-direction: column;
+        }
+        /* start editing second container */
+        .second-product-container {
+          margin-top: 20px;
+          margin-left: 10px;
+        }
+        .first-para-second-container {
+          font-weight: bold;
+          font-size: 14px;
+          margin-bottom: 10px;
+        }
+        .second-products {
+          display: flex;
+          flex-wrap: wrap;
+        }
+        .second-card {
+          overflow: hidden;
+          flex-direction: column;
+          display: flex;
+          min-height: 300px;
+          max-height: 300px;
+          flex-basis: 170px;
+          border: 1px solid red;
+          text-align: center;
+        }
+
+        .first.image-container-second img {
+          transform: translate(-20px);
+
+          width: 200px;
+        }
+
+        div.second-card:nth-child(2) {
+          justify-content: center;
+        }
+        .second.image-container-second img {
+          width: 150px;
         }
         @media screen and (min-width: 495px) {
           .products-container {
@@ -130,7 +167,10 @@
     </div>
     <div class="first-top">
       <p>
-        Store. <span>The best way to buy <br />the products you love </span>
+        Store.
+        <span class="grey-text"
+          >The best way to buy <br />the products you love
+        </span>
       </p>
       <div class="top-right-float">
         <div class="half">
@@ -160,13 +200,13 @@
     <div class="products-container">
       <div class="product">
         <div class="image-container-product">
-          <img src="../macforclone.png" />
+          <img src="macforclone.png" />
         </div>
         <p>Mac</p>
       </div>
       <div class="product">
         <div class="image-container-product">
-          <img src="/iphoneforclone.png" />
+          <img src="iphoneforclone.png" />
         </div>
         <p>iPhone</p>
       </div>
@@ -187,6 +227,49 @@
           <img src="airpodsforclone.png" />
         </div>
         <p>Airpods</p>
+      </div>
+    </div>
+    <div class="second-product-container">
+      <p class="first-para-second-container">
+        The latest.<span class="grey-text"
+          >Take a look of what's new right now</span
+        >
+      </p>
+      <div class="second-products">
+        <div class="second-card">
+          <p>Iphone 13 pro</p>
+          <h2>Oh. So. Pro.</h2>
+          <p>Now in Alpine green. From $999.00 or $41.62</p>
+          <div class="first image-container-second">
+            <img src="iphone_13_PNG2.png" />
+          </div>
+        </div>
+        <div class="second-card">
+          <p>Studio Display</p>
+          <h2>A sight to be bold</h2>
+          <p>from $1999 or 165.89/mo. for 12 mo.</p>
+          <div class="second image-container-second">
+            <img src="/pngfind.com-apple-monitor-png-4584353.png" />
+          </div>
+        </div>
+        <div class="second-card">
+          <p></p>
+          <h2></h2>
+          <p></p>
+          <div class="image-container-second"><img src="" /></div>
+        </div>
+        <div class="second-card">
+          <p></p>
+          <h2></h2>
+          <p></p>
+          <div class="image-container-second"><img src="" /></div>
+        </div>
+        <div class="second-card">
+          <p></p>
+          <h2></h2>
+          <p></p>
+          <div class="image-container-second"><img src="" /></div>
+        </div>
       </div>
     </div>
   </body>
