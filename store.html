@@ -93,6 +93,7 @@
           flex-wrap: wrap;
         }
         .second-card {
+          gap: 5px;
           flex: 1 1 auto;
           overflow: hidden;
           flex-direction: column;
@@ -100,8 +101,11 @@
           min-height: 300px;
           max-height: 300px;
           flex-basis: 170px;
-          border: 1px solid red;
+
           text-align: center;
+        }
+        .second-card img {
+          width: 155px;
         }
 
         .first.image-container-second img {
@@ -116,46 +120,91 @@
         .second.image-container-second img {
           width: 150px;
         }
-        @media screen and (min-width: 495px) {
-          .products-container {
-            flex-wrap: nowrap;
-          }
-          .product {
-            width: 80px;
-          }
+        /*stop editing second-product*/
+        /* star editing thrd procuts*/
+
+        .second-card:nth-child(3) {
+          justify-content: center;
         }
-        .product p {
-          font-weight: bold;
-          font-size: 18px;
+        /* stop editing third product */
+        /* start editing 4th item */
+
+        .second-card:nth-child(4) {
+          justify-content: flex-end;
         }
-        @media screen and (min-width: 670px) {
-          .products-container {
-            flex-wrap: wrap;
-          }
-          .product {
-            width: 200px;
-          }
-          .first-top {
-            padding-top: 60px;
-            justify-content: space-around;
-          }
-          .first-top > p {
-            font-size: 40px;
-          }
-          .top-right-float p {
-            font-size: 16px;
-          }
-          .image-container-product img {
-            height: 200px;
-          }
+        /* stop editing 4th item*/
+        .second-card:nth-child(5) {
+          display: flex;
+          justify-content: center;
         }
-        @media screen and (min-width: 888px) {
-          .products-container {
-            flex-wrap: nowrap;
-          }
-          .product {
-            min-width: 160px;
-          }
+      }
+      @media screen and (min-width: 495px) {
+        .first-para-second-container {
+          font-size: 23px;
+        }
+        .products-container {
+          flex-wrap: nowrap;
+        }
+        .product {
+          width: 80px;
+        }
+      }
+      .product p {
+        font-weight: bold;
+        font-size: 18px;
+      }
+      @media screen and (min-width: 670px) {
+        .first-para-second-container {
+          font-size: 30px;
+        }
+        .products-container {
+          flex-wrap: wrap;
+        }
+        .product {
+          width: 200px;
+        }
+        .second-card {
+          flex-basis: 150px;
+        }
+        .first-top {
+          padding-top: 60px;
+          justify-content: space-around;
+        }
+        .first-top > p {
+          font-size: 40px;
+        }
+        .top-right-float p {
+          font-size: 16px;
+        }
+        .image-container-product img {
+          height: 200px;
+        }
+      }
+      @media screen and (min-width: 669px) {
+        .second-card {
+          flex-basis: 230px;
+        }
+      }
+      @media screen and (min-width: 929px) {
+        .second-products {
+          flex-wrap: nowrap;
+        }
+      }
+
+      @media screen and (min-width: 888px) {
+        .products-container {
+          flex-wrap: nowrap;
+        }
+        .product {
+          min-width: 160px;
+        }
+      }
+      @media screen and (min-width: 1500px) {
+        .second-card img {
+          width: 300px !important;
+        }
+        .second-card {
+          max-height: 400px !important;
         }
       }
     </style>
@@ -250,26 +299,32 @@
           <h2>A sight to be bold</h2>
           <p>from $1999 or 165.89/mo. for 12 mo.</p>
           <div class="second image-container-second">
-            <img src="/pngfind.com-apple-monitor-png-4584353.png" />
+            <img src="pngfind.com-apple-monitor-png-4584353.png" />
           </div>
         </div>
         <div class="second-card">
-          <p></p>
-          <h2></h2>
-          <p></p>
-          <div class="image-container-second"><img src="" /></div>
+          <p>IPHONE SE</p>
+          <h2>Love the power.<br />Love the price.</h2>
+          <p>From 429.00 or $17.87/mo. for 24 mo.</p>
+          <div class="image-container-second">
+            <img src="Apple-iPhone-SE-2022-1.png" />
+          </div>
         </div>
         <div class="second-card">
-          <p></p>
-          <h2></h2>
-          <p></p>
-          <div class="image-container-second"><img src="" /></div>
+          <p>APPLE WATCH BANDS</p>
+          <h2>New hues in bloom</h2>
+          <p>Shop the latest band styles and colors</p>
+          <div class="image-container-second">
+            <img
+              src="luxury-straps-for-your-apple-watch-hermes-double-tour-apple-watch-5-wristwatch-belt-accessories-accessory-transparent-png-2562321.png"
+            />
+          </div>
         </div>
         <div class="second-card">
-          <p></p>
-          <h2></h2>
-          <p></p>
-          <div class="image-container-second"><img src="" /></div>
+          <p>iPods</p>
+          <h2>Wanna hear real music?</h2>
+          <p>Never skip a beat with our headphones</p>
+          <div class="image-container-second"><img src="head.png" /></div>
         </div>
       </div>
     </div>
